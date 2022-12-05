@@ -1,0 +1,36 @@
+body {
+    font-size: 14px;
+    line-height: 1;
+    font-family: $font;
+    color: $dark;
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #f0f2f5;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}

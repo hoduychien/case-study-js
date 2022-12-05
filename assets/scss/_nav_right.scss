@@ -1,0 +1,97 @@
+.nav-right {
+    position: fixed;
+    width: 20%;
+    height: calc(100vh - 54px);
+    top: 54px;
+    left: 0;
+    overflow-y: hidden;
+    transition: all 0.2s linear;
+
+    &:hover {
+        transition: all 0.2s linear;
+        overflow-y: scroll;
+    }
+
+    hr {
+        margin-right: 0 15px;
+    }
+
+    &-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+        padding-left: 16px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 12px;
+
+            &:hover {
+                background-color: #ececec;
+            }
+
+            h3 {
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+                display: block;
+                width: 180px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            &-button {
+                width: 28px;
+                height: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ccc;
+                border-radius: 100rem;
+            }
+
+            img {
+                width: 28px;
+                height: 28px;
+                object-fit: cover;
+                border-radius: 100rem;
+            }
+
+            &-image {
+                min-width: 38px;
+
+                &-square {
+                    img {
+                        border-radius: 4px;
+                    }
+                }
+            }
+
+
+        }
+
+        &-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+
+            h3 {
+                font-size: 14px;
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+                font-size: 12px;
+                color: #0879e9;
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.content {
+    width: 600px;
+    margin: 0 auto;
+}
+
+hr.line {
+    border: none;
+    border-top: 1px solid rgb(223, 223, 223);
+    padding: 0;
+}
+
+hr.line-2 {
+    border: none;
+    border-top: 1px solid rgb(223, 223, 223);
+    padding: 0;
+    margin: 10px 0;
+}
+
+.control {
+    &-main {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+        background-color: #fff;
+        margin-top: 66px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+    }
+
+    &-top {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &-search-box {
+            padding: 8px 20px;
+            background-color: #f0f2f5;
+            width: 100%;
+            border-radius: 100rem;
+            cursor: pointer;
+
+            input {
+                width: 100%;
+                text-align: left;
+                border: 0;
+                outline: 0;
+                background-color: transparent;
+                font-size: 14px;
+                line-height: 2;
+                color: rgb(122, 122, 122);
+                cursor: pointer;
+            }
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 100rem;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    }
+
+    &-action {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            gap: 10px;
+            cursor: pointer;
+            flex: 1;
+            transition: all 0.2s linear;
+            border-radius: 4px;
+
+            p {
+                font-weight: 500;
+                color: rgb(100, 100, 111);
+                margin-bottom: 0;
+            }
+
+            &:nth-child(1) {
+                color: #f02849;
+            }
+
+            &:nth-child(2) {
+                color: #45bd62;
+            }
+
+            &:nth-child(3) {
+                color: #f7b928;
+            }
+
+            ion-icon {
+                font-size: 24px;
+
+
+            }
+
+            &:hover {
+                background-color: #f0f2f5;
+            }
+        }
+    }
+}
